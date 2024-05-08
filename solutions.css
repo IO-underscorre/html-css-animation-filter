@@ -1,6 +1,6 @@
 /* Exercise #1 */
 .ex-1-square {
-    transition: all 1.5s;
+    transition: all 1.5s ease;
 }
 
 .ex-1-square:hover {
@@ -37,7 +37,7 @@
 
 /* Exercise #3 */
 .ex-3-square {
-    transition: all 3s ease-in;
+    transition: 3s ease-in;
 }
 
 .ex-3-square:hover {
@@ -46,7 +46,7 @@
 
 /* Exercise #4 */
 .ex-4-square {
-    transition: all 2s ease-out;
+    transition: 2s ease-out;
 }
 
 .ex-4-square:hover {
@@ -69,4 +69,13 @@
 /* Exercise #6 */
 .ex-6-img:hover {
     filter: grayscale(100%);
+}
+
+/* Exercise #7 */
+.ex-7-img {
+    transition: 2s;
+}
+
+.ex-7-img:hover {
+    filter: saturate(40%) sepia(50%);
 }
