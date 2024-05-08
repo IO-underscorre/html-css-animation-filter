@@ -79,3 +79,13 @@
 .ex-7-img:hover {
     filter: saturate(40%) sepia(50%);
 }
+
+/* Exercise #8 */
+.ex-8-img {
+    transition: all 2s ease-out;
+}
+
+.ex-8-img:hover {
+    border-radius: 25% 50% / 90%;
+    filter: invert(80%) hue-rotate(180deg);
+}
