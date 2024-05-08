@@ -1,6 +1,6 @@
 /* Exercise #1 */
 .ex-1-square {
-    transition: all 1.5s ease;
+    transition: 1.5s;
 }
 
 .ex-1-square:hover {
@@ -9,7 +9,7 @@
 
 /* Exercise #2 */
 .ex-2-square {
-    transition: width 4s linear;
+    transition: 4s linear;
     display: flex;
 
     align-items: center;
@@ -21,18 +21,18 @@
 }
 
 .ex-2-square::after {
+    opacity: 0;
     content: "I'M WIIIIIIIIIIDE";
     width: 100%;
-    font-size: 3rem;
-    font-weight: 700;
+    font: 700 2rem;
     color: white;
-    opacity: 0;
 
     transition: 1s ease-out 2s;
 }
 
 .ex-2-square:active::after {
     opacity: 1;
+    font-size: 4rem;
 }
 
 /* Exercise #3 */
@@ -82,7 +82,7 @@
 
 /* Exercise #8 */
 .ex-8-img {
-    transition: all 2s ease-out;
+    transition: 2s ease-out;
 }
 
 .ex-8-img:hover {
@@ -103,15 +103,11 @@
 
 /* Exercise #10 */
 .ex-10-icon {
-    animation-name: loading;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: reverse;
+    animation: loading 2s infinite linear reverse;
 }
 
 @keyframes loading {
-    100% {
+    0% {
         transform: rotate(360deg);
     }
 }
