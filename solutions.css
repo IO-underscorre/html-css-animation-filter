@@ -124,3 +124,22 @@
 }
 
 /* Exercise #12 */
+.ex-12-button:hover .ex-12-top-white {
+    animation: top-gap-12 .5s linear alternate 2;
+}
+
+@keyframes top-gap-12 {
+    100% {
+        left: 50%;
+    }
+}
+
+.ex-12-button:hover .ex-12-bottom-white {
+    animation: bottom-gap-12 .5s linear alternate 2;
+}
+
+@keyframes bottom-gap-12 {
+    100% {
+        right: 60%;
+    }
+}
