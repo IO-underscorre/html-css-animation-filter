@@ -107,10 +107,26 @@
     animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    animation-direction: reverse;
 }
 
 @keyframes loading {
     100% {
         transform: rotate(360deg);
+    }
+}
+
+/* Exercise #11 */
+.ex-11-icon {
+    animation-name: maybe-loading;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+}
+
+@keyframes maybe-loading {
+    100% {
+        transform: rotate(270deg);
     }
 }
