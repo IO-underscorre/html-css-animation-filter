@@ -143,3 +143,76 @@
         right: 60%;
     }
 }
+
+/* Exercise #13 */
+.ex-13-button:hover .ex-13-top-white {
+    animation: top-gap-13 3s linear infinite;
+}
+
+@keyframes top-gap-13 {
+    0% {
+        left: 10%;
+        top: -10px;
+    }
+
+    30.15% {
+        left: calc(100% - 40px);
+        top: -10px;
+    }
+
+    43.15% {
+        left: calc(100% - 40px);
+        top: calc(100% - 10px);
+    }
+
+    80.15% {
+        left: -20px;
+        top: calc(100% - 10px);
+    }
+
+    93.15% {
+        left: -20px;
+        top: -10px;
+    }
+
+    100% {
+        left: 10%;
+        top: -10px;
+    }
+}
+
+.ex-13-button:hover .ex-13-bottom-white {
+    animation: bottom-gap-13 3s linear infinite;
+}
+
+@keyframes bottom-gap-13 {
+    0% {
+        right: 20%;
+        bottom: -10px;
+    }
+
+    28.85% {
+        right: calc(100% - 40px);
+        bottom: -10px;
+    }
+
+    41.85% {
+        right: calc(100% - 40px);
+        bottom: calc(100% - 10px);
+    }
+
+    78.85% {
+        right: -20px;
+        bottom: calc(100% - 10px);
+    }
+
+    91.85% {
+        right: -20px;
+        bottom: -10px;
+    }
+
+    100% {
+        right: 20%;
+        bottom: -10px;
+    }
+}
