@@ -114,11 +114,7 @@
 
 /* Exercise #11 */
 .ex-11-icon:hover {
-    animation-name: maybe-loading;
-    animation-duration: 1.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation-direction: alternate;
+    animation: maybe-loading 1.5s ease-in-out alternate infinite;
 }
 
 @keyframes maybe-loading {
